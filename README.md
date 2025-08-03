@@ -583,12 +583,10 @@ class LivestockTracker:
 
 ## Technical Documentation and Resources
 
-### Complete Documentation
+### Documentation
 
 - **[INSTALLATION.md](INSTALLATION.md)**: Comprehensive installation and setup guide
 - **[Technical Paper](docs/technical_paper.md)**: Detailed methodology and experimental results
-- **[API Documentation](docs/api/)**: Complete programming interface reference
-- **[Configuration Guide](docs/configuration.md)**: System configuration and optimization
 
 ### Research Contributions and Impact
 
