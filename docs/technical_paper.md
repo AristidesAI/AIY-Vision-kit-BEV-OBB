@@ -394,5 +394,3 @@ Memory allocation analysis for optimization:
 
 ---
 
-*Manuscript submitted to IEEE Transactions on Pattern Analysis and Machine Intelligence*
-*Date: 2024*
