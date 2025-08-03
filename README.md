@@ -303,6 +303,6 @@ If you use this project in your research, please cite:
 ---
 
 **Project Status**: Active Development  
-**Last Updated**: 2024  
-**Maintainer**: [Your Name]  
-**Contact**: your.email@example.com
+**Last Updated**: 2025  
+**Maintainer**: [Aristides Lintzeris]  
+**Contact**: aristideslintzeris@icloud.com
