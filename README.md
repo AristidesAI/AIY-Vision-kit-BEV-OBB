@@ -37,11 +37,6 @@ The primary objective is to develop an autonomously capable FPV (First Person Vi
 - **Parking Management**: Automated parking space utilization monitoring
 - **Security Surveillance**: Perimeter monitoring and vehicle identification in restricted areas
 
-#### Search and Rescue Operations
-- **Person Detection**: Autonomous search capabilities in wilderness and disaster areas
-- **Coverage Mapping**: Systematic search pattern execution with real-time feedback
-- **Emergency Response**: Rapid deployment for time-critical rescue operations
-
 ### Future Development Roadmap
 
 #### Phase 1: Current Implementation (AIY Vision Kit Integration)
@@ -604,7 +599,7 @@ This project advances the state-of-the-art in several key areas:
 3. **Practical Deployment**: Demonstrated viability of sophisticated computer vision on ultra-low-cost hardware
 4. **Open Source Contribution**: Complete system implementation enabling broader research collaboration
 
-## References and Related Work
+## References
 
 ### Primary References
 
@@ -640,38 +635,7 @@ This project advances the state-of-the-art in several key areas:
 - **[YOLOv5 by Ultralytics](https://github.com/ultralytics/yolov5)**: Foundation object detection architecture
 - **[Google AIY Projects](https://aiyprojects.withgoogle.com)**: AI and machine learning for makers
 
-## Citation
 
-If you use this work in your research, please cite:
-
-```bibtex
-@software{autonomous_uav_obb_2024,
-  title={Autonomous UAV Object Tracking and Mapping System: Real-Time Birds-Eye View Oriented Bounding Box Detection for Raspberry Pi Drones},
-  author={AIY Vision Kit Development Team},
-  year={2025},
-  url={https://github.com/aristidesai/aiy-vision-kit-bev-obb},
-  version={1.0.2},
-  note={Test implementation of UAV object tracking advancements with CogniFly integration}
-}
-```
-
-## Contributing and Community
-
-We welcome contributions from the drone development and computer vision communities:
-
-- **Technical Contributions**: Algorithm improvements, optimization techniques, hardware integration
-- **Application Development**: New use cases, domain-specific adaptations, performance benchmarks  
-- **Documentation**: Installation guides, tutorials, troubleshooting resources
-- **Testing**: Hardware compatibility, real-world deployment validation
-
-### Community Resources
-
-- **Issues and Bug Reports**: [GitHub Issues](https://github.com/aristidesai/aiy-vision-kit-bev-obb/issues)
-- **Feature Requests**: Submit enhancement proposals via GitHub
-- **Discussions**: Join the CogniFly community for broader drone development collaboration
-- **Academic Collaboration**: Contact maintainers for research partnerships
-
-## Acknowledgments
 
 
 **Acknowledgments**:
@@ -680,15 +644,4 @@ We welcome contributions from the drone development and computer vision communit
 - CogniFly project contributors for drone development frameworks
 - Open source community for tools, libraries, and continuous improvement
 
----
-
-<<<<<<< HEAD
-**Project Status**: Active Development | **Version**: 1.0.0 | **Last Updated**: 2024  
-**Maintainers**: AIY Vision Kit Development Team  
-**Primary Applications**: Autonomous UAV mapping, livestock tracking, sports analytics, search and rescue
-=======
-**Project Status**: Active Development  
-**Last Updated**: 2025  
-**Maintainer**: [Aristides Lintzeris]  
-**Contact**: aristideslintzeris@icloud.com
 
