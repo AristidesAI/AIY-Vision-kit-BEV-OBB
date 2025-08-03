@@ -648,9 +648,9 @@ If you use this work in your research, please cite:
 @software{autonomous_uav_obb_2024,
   title={Autonomous UAV Object Tracking and Mapping System: Real-Time Birds-Eye View Oriented Bounding Box Detection for Raspberry Pi Drones},
   author={AIY Vision Kit Development Team},
-  year={2024},
-  url={https://github.com/yourusername/aiy-vision-kit-bev-obb},
-  version={1.0.0},
+  year={2025},
+  url={https://github.com/aristidesai/aiy-vision-kit-bev-obb},
+  version={1.0.2},
   note={Test implementation of UAV object tracking advancements with CogniFly integration}
 }
 ```
@@ -666,14 +666,13 @@ We welcome contributions from the drone development and computer vision communit
 
 ### Community Resources
 
-- **Issues and Bug Reports**: [GitHub Issues](https://github.com/yourusername/aiy-vision-kit-bev-obb/issues)
+- **Issues and Bug Reports**: [GitHub Issues](https://github.com/aristidesai/aiy-vision-kit-bev-obb/issues)
 - **Feature Requests**: Submit enhancement proposals via GitHub
 - **Discussions**: Join the CogniFly community for broader drone development collaboration
 - **Academic Collaboration**: Contact maintainers for research partnerships
 
-## License and Acknowledgments
+## Acknowledgments
 
-**License**: Apache License 2.0 - see [LICENSE](LICENSE) file for details
 
 **Acknowledgments**:
 - Google AIY Projects team for the Vision Kit platform
@@ -692,4 +691,4 @@ We welcome contributions from the drone development and computer vision communit
 **Last Updated**: 2025  
 **Maintainer**: [Aristides Lintzeris]  
 **Contact**: aristideslintzeris@icloud.com
->>>>>>> fc73b3aac8b6cb61ffa7341e8288e44c35360fd0
+
