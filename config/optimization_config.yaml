@@ -1,0 +1,113 @@
+# Model Optimization Configuration for Raspberry Pi Zero W
+# Optimizations for AIY Vision Kit BEV-OBB Detection System
+
+# General optimization settings
+optimization:
+  target_device: "raspberry_pi_zero"
+  target_framework: "pytorch"
+  optimization_level: "aggressive"  # conservative, moderate, aggressive
+  
+  # Quantization settings
+  enable_quantization: true
+  quantization_type: "dynamic"  # dynamic, static, qat
+  quantization_backend: "fbgemm"  # fbgemm for x86, qnnpack for ARM
+  calibration_samples: 100
+  
+  # Pruning settings
+  enable_pruning: true
+  pruning_type: "unstructured"  # unstructured, structured
+  pruning_ratio: 0.3  # 30% of parameters pruned
+  pruning_schedule: "gradual"  # gradual, one_shot
+  
+  # Knowledge distillation settings
+  enable_distillation: false  # Requires training data
+  distillation_temperature: 4.0
+  distillation_alpha: 0.7
+  student_compression_ratio: 0.5
+  
+  # Model fusion and optimization
+  enable_fusion: true
+  enable_jit_optimization: true
+  enable_graph_optimization: true
+  
+  # Memory optimization
+  enable_memory_optimization: true
+  max_memory_usage_mb: 256  # Pi Zero W has 512MB RAM
+  enable_gradient_checkpointing: false  # Inference only
+  
+# Performance targets
+performance_targets:
+  max_inference_time_ms: 500  # 2 FPS minimum
+  target_fps: 2.5
+  max_model_size_mb: 50
+  max_memory_usage_mb: 128
+  
+# Hardware-specific optimizations
+hardware_optimizations:
+  # ARM Cortex-A53 specific
+  enable_neon: true
+  enable_cpu_affinity: true
+  cpu_threads: 1  # Single core optimization
+  
+  # Memory hierarchy optimization
+  l1_cache_size_kb: 32
+  l2_cache_size_kb: 512
+  optimize_for_cache: true
+  
+# Model architecture optimizations
+architecture_optimizations:
+  # Backbone optimizations
+  backbone_compression: true
+  replace_activations: true  # Replace expensive activations
+  optimize_skip_connections: true
+  
+  # Detection head optimizations
+  reduce_detection_layers: true
+  optimize_anchor_generation: true
+  simplify_nms: true
+  
+  # Feature pyramid optimizations
+  reduce_fpn_channels: true
+  optimize_fpn_operations: true
+  
+# Input/Output optimizations
+io_optimizations:
+  # Input preprocessing
+  optimize_preprocessing: true
+  use_int8_inputs: true
+  optimize_resize_operations: true
+  
+  # Output postprocessing
+  optimize_postprocessing: true
+  vectorize_operations: true
+  reduce_precision: true
+  
+# Validation settings
+validation:
+  accuracy_threshold: 0.85  # Minimum acceptable mAP
+  speed_threshold_ms: 500   # Maximum acceptable inference time
+  memory_threshold_mb: 128  # Maximum memory usage
+  
+  # Test dataset for validation
+  test_data_path: "data/validation"
+  test_batch_size: 1
+  test_samples: 100
+  
+# Output settings
+output:
+  save_intermediate_models: true
+  save_optimization_report: true
+  save_benchmark_results: true
+  output_format: "pytorch"  # pytorch, onnx, tflite
+  
+  # Model export settings
+  export_onnx: false  # ONNX export for cross-platform
+  export_tflite: false  # TensorFlow Lite for mobile
+  export_torchscript: true  # TorchScript for deployment
+  
+# Logging and monitoring
+logging:
+  log_level: "INFO"
+  log_optimization_steps: true
+  log_performance_metrics: true
+  save_optimization_log: true

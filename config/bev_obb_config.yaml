@@ -1,0 +1,65 @@
+# BEV-OBB YOLOv5 Configuration for AIY Vision Kit
+# Optimized for Raspberry Pi Zero W performance
+
+# Model Configuration
+model:
+  name: "yolov5s_bev_obb"
+  backbone: "mobilenet_v3_small"  # Lightweight backbone for Pi Zero
+  neck: "PANet"
+  head: "YOLOv5Head_OBB"
+  
+  # Model parameters optimized for low-resource hardware
+  depth_multiple: 0.33
+  width_multiple: 0.50
+  
+  # Oriented Bounding Box specific parameters
+  obb_angles: 180  # Angle range for OBB detection
+  angle_bins: 36   # Number of angle discretization bins
+  
+# Input Configuration
+input:
+  image_size: [416, 416]  # Reduced from 640x640 for Pi Zero performance
+  channels: 3
+  normalize: true
+  mean: [0.485, 0.456, 0.406]
+  std: [0.229, 0.224, 0.225]
+
+# Classes for BEV detection
+classes:
+  names: ['vehicle', 'person', 'bicycle', 'motorcycle', 'bus', 'truck', 'boat', 'airplane']
+  nc: 8  # Number of classes
+
+# Hardware Configuration
+hardware:
+  device: "cpu"  # Pi Zero doesn't support CUDA
+  half_precision: false  # FP16 not supported on Pi Zero CPU
+  quantization: true  # Enable int8 quantization for speed
+  threads: 1  # Single-threaded for Pi Zero
+  
+# Detection Parameters
+detection:
+  conf_threshold: 0.25
+  iou_threshold: 0.45
+  max_detections: 100
+  nms_type: "nms"  # Standard NMS for OBB
+  
+# BEV specific parameters
+bev:
+  height_range: [0.5, 50.0]  # Meters
+  width_range: [-25.0, 25.0]  # Meters
+  resolution: 0.1  # Meters per pixel
+  
+# AIY Vision Kit specific
+aiy:
+  camera_resolution: [1640, 1232]
+  framerate: 15  # Reduced for processing time
+  led_pin: 25
+  button_pin: 23
+  buzzer_pin: 22
+
+# Logging and Output
+logging:
+  save_frames: true
+  save_detections: true
+  log_level: "INFO"
+  output_dir: "/home/pi/bev_obb_output"
