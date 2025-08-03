@@ -683,6 +683,13 @@ We welcome contributions from the drone development and computer vision communit
 
 ---
 
+<<<<<<< HEAD
 **Project Status**: Active Development | **Version**: 1.0.0 | **Last Updated**: 2024  
 **Maintainers**: AIY Vision Kit Development Team  
 **Primary Applications**: Autonomous UAV mapping, livestock tracking, sports analytics, search and rescue
+=======
+**Project Status**: Active Development  
+**Last Updated**: 2025  
+**Maintainer**: [Aristides Lintzeris]  
+**Contact**: aristideslintzeris@icloud.com
+>>>>>>> fc73b3aac8b6cb61ffa7341e8288e44c35360fd0
